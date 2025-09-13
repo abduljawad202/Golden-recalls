@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vip - Recall System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><h1><span class="gold">Vip - Recall System</span></h1></div>
+  <div class="meta">
+    <div id="clock" class="clock">Updated: —</div>
+    <div class="controls">
+      <div id="alertLamp" class="lamp" title="Critical alerts"></div>
+      <button id="langBtn" class="btn">AR</button>
+      <button id="themeBtn" class="btn">Dark</button>
+      <button id="refreshBtn" class="btn primary">Refresh</button>
+    </div>
+  </div>
+</header>
+
+<section class="filters">
+  <input id="q" placeholder="Search product/company…" aria-label="Search">
+  <button id="searchBtn" class="btn primary">Search</button>
+  <select id="source"></select>
+  <select id="scope">
+    <option value="">All scopes</option>
+    <option value="international">International</option>
+    <option value="national">National</option>
+    <option value="subnational">Local/Regional</option>
+  </select>
+  <select id="yearFilter">
+    <option value="">All years</option>
+  </select>
+</section>
+
+<section class="meta2">
+  <div><span id="resultsLbl">Results</span>: <strong id="count">0</strong></div>
+  <div class="hint" id="hintLbl">Tap any card for full details and official link.</div>
+</section>
+
+<main id="list" class="list"></main>
+
+<footer class="foot">
+  <small>Live sources: FDA, FSIS (USDA), FSA (UK), CFIA (Canada), FSANZ (AU), MPI (NZ), SFA (SG), FSAI (IE), RASFF (EU), SFDA (KSA). Auto‑refresh ~10 min.</small>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

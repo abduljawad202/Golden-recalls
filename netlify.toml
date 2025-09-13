@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/recalls"
+  to = "/.netlify/functions/recalls"
+  status = 200
